@@ -1,5 +1,10 @@
 # Using OpenRefine
 
+By Christian McDonald\
+Associate Professor of Practice\
+School of Journalism and Media, Moody College of Communication\
+University of Texas at Austin
+
 [OpenRefine](https://openrefine.org/) is a free, open source, powerful tool for working with messy data. Our most common use for it is to clean and transform data.
 
 ## Installation
