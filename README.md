@@ -6,7 +6,7 @@ This lesson is written in Quarto and published on Github Pages.
 
 **View the lesson here: <https://utdata.github.io/openrefine/>**
 
-## About
+## About me
 
 By Christian McDonald\
 Associate Professor of Practice\
