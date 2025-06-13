@@ -274,7 +274,7 @@
     "href": "demo-facets.html#start-with-some-data",
     "title": "Transforms & Facets",
     "section": "Start with some data",
-    "text": "Start with some data\n\nDownload this TEC campaign finance data data. Put the file somewhere you can find it later.\nThis is what the file looks like in Excel:\n\n\n\nData peek\n\n\n\nThere are several things we’d like to do with this data:\n\nCreate a new “Candidate” column based on the PAC-based “Name” column, but clean up the values to just the candidate’s name.\nCreate a new “Election Cycle” column so we can later summarize the amounts over these two-year cycles.\nNormalize the “Race-Ethnicity” and “Party” columns.",
+    "text": "Start with some data\n\n\n\n\n\n\n Download TEC campaign finance data\n\n\n\n\nDownload the data linked above and put the file somewhere you can find it later.\nYou don’t need to open it now, but this is what the file looks like in Excel:\n\n\n\nData peek\n\n\n\nThere are several things we’d like to do with this data:\n\nCreate a new “Candidate” column based on the PAC-based “Name” column, but clean up the values to just the candidate’s name.\nCreate a new “Election Cycle” column so we can later summarize the amounts over these two-year cycles.\nNormalize the “Race-Ethnicity” and “Party” columns.",
     "crumbs": [
       "Demos",
       "Transforms & Facets"

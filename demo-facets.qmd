@@ -11,9 +11,15 @@ For this story we wanted to summarize candidate election campaign contributions 
 
 ## Start with some data
 
-1. Download this [TEC campaign finance data](data/tec-totals-preclean.xlsx) data. Put the file somewhere you can find it later.
+::: {.callout-note appearance="minimal"}
+<i class="bi bi-download"></i> [Download TEC campaign finance data](data/tec-totals-preclean.xlsx){download="data/tec-totals-preclean.xlsx"}
+:::
 
-    This is what the file looks like in Excel:
+
+
+1. Download the data linked above and put the file somewhere you can find it later.
+
+    You don't need to open it now, but this is what the file looks like in Excel:
     
     ![Data peek](img/tec-data-peek.png)
 
