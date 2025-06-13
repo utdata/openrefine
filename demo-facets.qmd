@@ -12,7 +12,7 @@ For this story we wanted to summarize candidate election campaign contributions 
 ## Start with some data
 
 ::: {.callout-note appearance="minimal"}
-<i class="bi bi-download"></i> [Download TEC campaign finance data](tec-totals-preclean.xlsx){download="data/tec-totals-preclean.xlsx"}
+<i class="bi bi-download"></i> [Download TEC campaign finance data](data/tec-totals-preclean.xlsx){download="tec-totals-preclean.xlsx"}
 :::
 
 1. Download the data using the link above. It should go to your Downloads folder. You would usually move the file to some organized project folder.
