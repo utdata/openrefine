@@ -41,3 +41,10 @@ These are examples where I've used OpenRefine to solve a problem. They are not t
   - OpenRefine's [user manual](https://openrefine.org/docs)
   - [Expressions](https://openrefine.org/docs/manual/expressions)
   - [GREL functions](https://openrefine.org/docs/manual/grelfunctions)
+
+## About me
+
+By [Christian McDonald](https://www.linkedin.com/in/critmcdonald/)\
+Associate Professor of Practice\
+[School of Journalism and Media](https://journalism.utexas.edu/), Moody College of Communication\
+University of Texas at Austin

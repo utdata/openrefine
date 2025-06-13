@@ -25,7 +25,7 @@ I used Edit column > **Add column based on this column** with the following expr
 
 ![explain records](img/ash-explain-records.png)
 
-## Just needed the year in the end
+## The result
 
 I was able to create parts of dates and put them back together again to get a common-enough date format to extract the last four characters -- the year -- from the fixed date.
 

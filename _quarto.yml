@@ -17,6 +17,8 @@ website:
       - section: "Case studies"
         contents: "case-*qmd"
       # - auto: "*.qmd"
+  repo-url: https://github.com/utdata/openrefine
+  repo-actions: [source, issue]
 
 format:
   html:
