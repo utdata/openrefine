@@ -30,7 +30,7 @@ Regular bullet lists are just information:
 
 ## Case studies
 
-These are some example use cases using OpenRefine. They are not tutorials, but discussions of how OpenRefine was used in some specific instances with key points explained.
+These are examples where I've used OpenRefine to solve a problem. They are not tutorials, but discussions of how OpenRefine was used in some specific instances with key points explained.
 
 - [AHRQ diagnostic codes](case-ahrq.qmd) pulled from a PDF.
 - [Austin State Hospital cemetery](case-ash.qmd) burials where records are on more than one line.
@@ -38,6 +38,6 @@ These are some example use cases using OpenRefine. They are not tutorials, but d
 ## Resources
 
 - [OpenRefine.org](https://openrefine.org/) has great documentation, tutorials, FAQs and more, including:
-  - OpenRefine's [user manual](https://openrefine.org/docs):
+  - OpenRefine's [user manual](https://openrefine.org/docs)
   - [Expressions](https://openrefine.org/docs/manual/expressions)
   - [GREL functions](https://openrefine.org/docs/manual/grelfunctions)
