@@ -290,7 +290,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="cluster">Cluster</h2>
 <p>OpenRefine has a concept called <strong>Cluster</strong> that will use algorithms to find similarly-constructed or even similar sounding words. We’ll use a series of these help us clean these city names.</p>
 <ol type="1">
-<li><p>In the text facet box for <em>City_clean</em>, click on the <strong>Cluster</strong> button at the top-right. This brings up the <strong>Cluster and edit column</strong> tool.</p>
+<li><p>In the text facet box for <em>City_clean</em>, click on the <strong>Cluster</strong> button at the top-right. This brings up the <strong>Cluster and edit column</strong> tool.</p></li>
+<li><p>Click on the <strong>Cluster</strong> button in the middle so we can take a little tour of the options.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/ppp-cluster-tour.png" class="img-fluid figure-img"></p>
@@ -303,7 +304,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Look through all the values for a particular <strong>Keying function</strong>.</li>
 <li>If you want to merge <strong>all</strong> the values in the cluster, check the <strong>Merge</strong> box and set the <strong>New Cell Value</strong> to the desired result.
 <ul>
-<li>If even one of the values in the cluster does not belong together, then DON’T MERGE IT. You’ll have to deal with them independently later. Take notes and edit from the text facet, perhaps.</li>
+<li>If one of the values in the cluster does belong to the new value, then uncheck the box next to that value so it won’t be included.</li>
 </ul></li>
 <li>Once you’ve reviewed all the clusters, choose <strong>Merge Selected &amp; Re-Cluster</strong>.</li>
 <li>After a quick double-check, change the <strong>Keying Function</strong> to the next algorithm.</li>
@@ -313,7 +314,7 @@ ul.task-list li input[type="checkbox"] {
 <li>With <strong>nearest neighbor</strong> and <strong>levenshtein</strong> it might be worth reducing the value in <strong>Block Chars</strong> to see if there are more matches that help you.</li>
 </ul></li>
 </ul>
-<p>Following is a gif of me going through a couple of keying functions, merges and new algorithms. I’m not fixing all the values, just showing enough of the process to give you an idea of how it works.</p>
+<p>Below is a gif of me going through a couple of keying functions, merges and new algorithms. I’m not fixing all the values, just showing enough of the process to give you an idea of how it works.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/ppp-cluster.gif" class="img-fluid figure-img"></p>
@@ -325,7 +326,6 @@ ul.task-list li input[type="checkbox"] {
 <p>As you cluster and clean data like this, you’ll likely have to do some research and make style decisions (N PROVIDENCE vs NORTH PROVIDENCE? Is it PEACE DALE or PEACEDALE?)</p>
 <ol type="1">
 <li>Go through all the algorithms and clean up the city names.</li>
-<li>Remember: Don’t merge unless all values in a cluster should be the same.</li>
 <li>Once through all the algorithms, double-check through the facet list to see if there are values the algorithms missed. It is quite possible.</li>
 </ol>
 <p>You would typically use text facets on all the text-based columns to check for other inconsistencies.</p>
@@ -362,7 +362,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="export">Export</h2>
 <p>Once you’ve done all your cleaning, use the Export dropdown button at the top-right of the app to export the data in your filetype of choice.</p>
 <hr>
-<p>We’re done with this lesson. Perhaps head back to the <a href="./index.html">Overivew</a> to read about some case studies.</p>
+<p>We’re done with this lesson. Perhaps head back to the <a href="./index.html#case-studies">Overivew</a> to read about some case studies.</p>
 
 
 </section>
