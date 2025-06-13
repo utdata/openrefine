@@ -62,7 +62,7 @@ Once in our project, there are a couple of controls along the top you should pla
 
 You usually want to keep your original data so you can refer back to it, so we’ll make a new column before we change our data significantly.
 
-1. On the Name column, use the dropdown to Edit Column > **Add a column based on this column**. Like this:
+1. On the _Name_ column, use the dropdown to Edit Column > **Add a column based on this column**. Like this:
 
     ![Add column](img/tec-add-column.png)
 
@@ -82,7 +82,7 @@ Sometimes cells in data have spaces at the beginning or end of the values that y
 
 ### Trim
 
-1. Click on the dropdown for the Candidate column and go to Edit cells > Common transforms > **Trim leading and trailing whitespace**.
+1. Click on the dropdown for the _Candidate_ column and go to Edit cells > Common transforms > **Trim leading and trailing whitespace**.
 
     ![Trim](img/tec-trim.png)
 
@@ -96,7 +96,7 @@ You may have noticed other things you can do under Common transforms, like chang
 
 Let's use this to change all the "d" and "r" in the Party field to uppercase.
 
-1. Use the dropdown on the "Party" column to choose Edit cells > Common transforms > **To uppercase**.
+1. Use the dropdown on the _Party_ column to choose Edit cells > Common transforms > **To uppercase**.
 
     ![To uppercase](img/tec-transform-uc.png)
 
@@ -116,7 +116,7 @@ You can also Extract the steps and Apply them later if you want to save steps to
 
 One of the most useful skills in OpenRefine is find and change many cells of data in a column at once. The Text facet function gives you a list of all the unique values in your data and tells you in how many rows it shows up.
 
-1. Go to the dropdown for Candidate and then to Facet > **Text facet**.
+1. Go to the dropdown for _Candidate_ and then to Facet > **Text facet**.
 
     ![Text facet](img/tec-text-facet.png)
 
@@ -137,7 +137,7 @@ The values are listed alphabetically, which can be helpful to find records that 
 
 Notice that when you roll your cursor over a value in the facet list you get a link where you can edit that value.
 
-1. Scroll down the Candidate facets to find "Citizens For Joe Crabb (DISSOLVED)".
+1. Scroll down the _Candidate_ facets to find "Citizens For Joe Crabb (DISSOLVED)".
 1. As you hover your cursor over that value, you'll see an **edit** menu item. Click on that.
 2. Change the text to say just "Joe Crabb" and hit **Apply**.
 
@@ -147,8 +147,8 @@ Once you change those values, the list sorts again and Joe is down by the J's.
 
 A little work on your own to get some practice:
 
-1. Close the Candidate text facet by **clicking the `X`** that is to the left of the facet title.
-1. Clean up the Race-Ethnicity values to spell out those values to Asian, Black, Hispanic, White. This is straightforward facet editing: Create the facet, then edit the values.
+1. Close the _Candidate_ text facet by **clicking the `X`** that is to the left of the facet title.
+1. Clean up the _Race-Ethnicity_ values to spell out those values to Asian, Black, Hispanic, White. This is straightforward facet editing: Create the facet, then edit the values.
 
 Once you are done:
 
@@ -159,7 +159,7 @@ Once you are done:
 
 You'll notice there are a bunch of Candidate records that start with "Committee to ...". We'll use a Text filter to help find those.
 
-1. From the dropdown on Candidate, choose **Text filter**.
+1. From the dropdown on _Candidate_, choose **Text filter**.
 
     ![Text filter](img/tec-text-filter-menu.png)
 
@@ -181,10 +181,10 @@ But when it comes to "Friends", let's instead do a search/replace to fix them al
 
 ## Search and replace with Transform
 
-Now we'll use the Transform function to search for and replace values.
+Now we'll use the Transform function to search for and replace specific values.
 
-1. Set your Text filter to "Friends of" so we can see them, but don't fix them yet. We'll instead edit all the rows at once using Transform.
-1. Click on the Candidate dropdown and go to Edit cells > **Transform**:
+1. In your **Text filter** type in `Friends of ` so we can see them, but don't fix them yet. We'll instead edit all the rows at once using Transform.
+1. Click on the _Candidate_ dropdown and go to Edit cells > **Transform**:
 
     ![Transform menu](img/tec-transform-menu.png)
 
@@ -217,9 +217,9 @@ Now that you've learned text facets and text filters, we'll use those skills to 
 
 ### Create a blank column
 
-1. Use the Year column dropdown to choose **Edit Column > Add column based on this column**.
+1. Use the _Year_ column dropdown to choose **Edit Column > Add column based on this column**.
 1. Name the column **"Election cycle"**.
-1. In the expression field, remove the `value` variable and just add two quotes with nothing between them, like this: `""`
+1. In the Expression field, remove the `value` variable and just add two quotes with nothing between them, like this: `""`
 1. Click **OK**.
 
 This will create a new column, but there should be **nothing in it** because we filled it with an "empty" string.
@@ -268,10 +268,10 @@ Once you are done, remove all your facets and text filters!
 
 Once you cleaned everything the way you want it, you'll want to export your changed data to get it out of OpenRefine so you can use it elsewhere.
 
-1. Go under the Export button at top-right and choose the export type of your choice.
+1. Go under the _Export_ button at top-right and choose the export type of your choice.
 
     ![Export](img/tec-export.png)
 
-This will download your file to your **Downloads** folder. Don't forget to move the file to a safe place where you can find it again.
+This will download your file to your Downloads folder on your computer. Don't forget to move the file to a safe place where you can find it again.
 
 That's the end of this example. We'll handle [Clustering](demo-cluster.qmd) with a different data set.
