@@ -37,7 +37,7 @@ You can already see that some cities are in UPPERCASE and some are not. Lordy ..
 
 ## Make a new city column
 
-1. Use the dropdown on the *City* column to choose **Edit column > Add column based on this column ...**.
+1. Use the dropdown on the *City* column to choose Edit column > **Add column based on this column**.
 
     ![Add column](img/ppp-add-column.png)
 
@@ -45,7 +45,7 @@ You can already see that some cities are in UPPERCASE and some are not. Lordy ..
 
     We created a new column that has the same values as *City*. We made a copy so we can always refer back to the original data.
 
-1. Next, use the dropdown on the new  *City_clean* to choose **Facet > Text facet**.
+1. Next, use the dropdown on the new  *City_clean* to choose Facet > **Text facet**.
 
     We can see that the cities are a mess.
     
@@ -55,7 +55,7 @@ We have a mixture of cases, many misspellings and cases where the data is not a 
 
 ## Change to uppercase
 
-1. Use the dropdown on *City_clean* to choose **Edit cells > Common transforms > To uppercase**.
+1. Use the dropdown on *City_clean* to choose Edit cells > Common transforms > **To uppercase**.
 
     ![To uppercase](img/ppp-to-uppercase.png).
 
@@ -98,11 +98,11 @@ You would typically use text facets on all the text-based columns to check for o
 
 Since the PPP data is all about money, we should make sure that our number fields are not out of whack.
 
-1. Use the dropdown on the *LoanAmount* field to choose **Edit cells > Common transforms > To number**.
+1. Use the dropdown on the *LoanAmount* field to choose Edit cells > Common transforms > **To number**.
 
     This sets the values in that column to be numbers so we can do numbery things on them.
 
-1. Use the dropdown on *LoanAmount* to choose **Facet > Numeric facet**.
+1. Use the dropdown on *LoanAmount* to choose Facet > **Numeric facet**.
 
     This shows you where the menu is along with the resulting histogram:
     
