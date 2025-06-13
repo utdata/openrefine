@@ -66,6 +66,7 @@ This helps us some, combining 300 different variations to only 162 choices, but 
 OpenRefine has a concept called **Cluster** that will use algorithms to find similarly-constructed or even similar sounding words. We'll use a series of these help us clean these city names.
 
 1. In the text facet box for *City_clean*, click on the **Cluster** button at the top-right. This brings up the **Cluster and edit column** tool.
+1. Click on the **Cluster** button in the middle so we can take a little tour of the options.
 
     ![Cluster tour](img/ppp-cluster-tour.png)
 
@@ -73,14 +74,14 @@ The idea here is to work through all the results methodically:
 
 - Look through all the values for a particular **Keying function**.
 - If you want to merge **all** the values in the cluster, check the **Merge** box and set the **New Cell Value** to the desired result.
-  - If even one of the values in the cluster does not belong together, then DON'T MERGE IT. You'll have to deal with them independently later. Take notes and edit from the text facet, perhaps.
+  - If one of the values in the cluster does belong to the new value, then uncheck the box next to that value so it won't be included.
 - Once you've reviewed all the clusters, choose **Merge Selected & Re-Cluster**.
 - After a quick double-check, change the **Keying Function** to the next algorithm.
 - Rinse and repeat for all the keying functions.
 - Then change the **Method** from "key collision" to "nearest neighbor" and follow all the above steps again.
   - With **nearest neighbor** and **levenshtein** it might be worth reducing the value in **Block Chars** to see if there are more matches that help you.
 
-Following is a gif of me going through a couple of keying functions, merges and new algorithms. I'm not fixing all the values, just showing enough of the process to give you an idea of how it works.
+Below is a gif of me going through a couple of keying functions, merges and new algorithms. I'm not fixing all the values, just showing enough of the process to give you an idea of how it works.
 
 ![Clustering](img/ppp-cluster.gif)
 
@@ -89,7 +90,6 @@ Following is a gif of me going through a couple of keying functions, merges and 
 As you cluster and clean data like this, you'll likely have to do some research and make style decisions (N PROVIDENCE vs NORTH PROVIDENCE? Is it PEACE DALE or PEACEDALE?)
 
 1. Go through all the algorithms and clean up the city names.
-1. Remember: Don't merge unless all values in a cluster should be the same.
 1. Once through all the algorithms, double-check through the facet list to see if there are values the algorithms missed. It is quite possible.
 
 You would typically use text facets on all the text-based columns to check for other inconsistencies.
@@ -124,4 +124,4 @@ Once you've done all your cleaning, use the Export dropdown button at the top-ri
 
 ---
 
-We're done with this lesson. Perhaps head back to the [Overivew](index.qmd) to read about some case studies.
+We're done with this lesson. Perhaps head back to the [Overivew](index.qmd#case-studies) to read about some case studies.
