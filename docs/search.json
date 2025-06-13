@@ -1,0 +1,393 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "OpenRefine is a powerful open source tool for working with messy data. Our most common use for it is to clean and transform data.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "Overview",
+    "section": "Installation",
+    "text": "Installation\nThe OpenRefine website has the latest stable release. They also have extensive installation instructions, including some important tips Mac users on how to circumvent security warnings when launching the file.\nWhile there is an OpenRefine application you launch, the program itself launches and uses your web browser for the interface.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#walkthroughs",
+    "href": "index.html#walkthroughs",
+    "title": "Overview",
+    "section": "Walkthroughs",
+    "text": "Walkthroughs\nThese are detailed demos with illustrated step-by-step instructions of commonly-used features of OpenRefine. If you are here to learn how to use OpenRefine, start with these.\n\nTransforms & Facets\nClustering\n\nWhen going through these demos, know that numbered lists are steps for you to do:\n\nDo this thing\nAnd then this thing\n\nRegular bullet lists are just information:\n\nThis is just information\nIt might be important. Or not.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#case-studies",
+    "href": "index.html#case-studies",
+    "title": "Overview",
+    "section": "Case studies",
+    "text": "Case studies\nThese are some example use cases using OpenRefine. They are not tutorials, but discussions of how OpenRefine was used in some specific instances with key points explained.\n\nAHRQ diagnostic codes pulled from a PDF.\nAustin State Hospital cemetery burials where records are on more than one line.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "Overview",
+    "section": "Resources",
+    "text": "Resources\n\nOpenRefine.org has great documentation, tutorials, FAQs and more, including:\n\nOpenRefine’s user manual:\nExpressions\nGREL functions",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "demo-cluster.html",
+    "href": "demo-cluster.html",
+    "title": "Clustering",
+    "section": "",
+    "text": "This lesson assumes you’ve gone through the Facets demo or have at least some familiarity with OpenRefine.",
+    "crumbs": [
+      "Demos",
+      "Clustering"
+    ]
+  },
+  {
+    "objectID": "demo-cluster.html#our-story-and-goal",
+    "href": "demo-cluster.html#our-story-and-goal",
+    "title": "Clustering",
+    "section": "Our story and goal",
+    "text": "Our story and goal\nWith this tutorial we will use the clustering technique in OpenRefine to clean up city names in some Paycheck Protection Program data. The data is notoriously dirty. We can’t accurately count or sum the loan values by city until this data has been cleaned.",
+    "crumbs": [
+      "Demos",
+      "Clustering"
+    ]
+  },
+  {
+    "objectID": "demo-cluster.html#download-the-data",
+    "href": "demo-cluster.html#download-the-data",
+    "title": "Clustering",
+    "section": "Download the data",
+    "text": "Download the data\nWe’re going to use Rhode Island’s list of PPP loans up to $150,000. We’re using Rhode Island because the data set is relatively small a 15,472 rows (compared to Texas at 365,168 rows.) OpenRefine could handle the larger data, but performance really starts to suffer with larger files.\n\n\n\n\n\n\n Download RI PPP data\n\n\n\n\nUse the link above to download the csv file and put it someplace where you can find it.",
+    "crumbs": [
+      "Demos",
+      "Clustering"
+    ]
+  },
+  {
+    "objectID": "demo-cluster.html#create-a-new-project",
+    "href": "demo-cluster.html#create-a-new-project",
+    "title": "Clustering",
+    "section": "Create a new project",
+    "text": "Create a new project\n\nLaunch OpenRefine if not already open. If you do have it open, click on the OpenRefine log at the top-left to get to the “home” page.\nChoose Create project.\nChoose This Computer if not already chosen.\nUse Choose files and find your downloaded data, ppp-less150-ri.csv.\nClick Next.\nThe defaults on the Parse screen should be fine. Click Create project.\n\nYou should end up here:\n\n\n\nRaw data\n\n\nYou can already see that some cities are in UPPERCASE and some are not. Lordy … if that were our only problem.",
+    "crumbs": [
+      "Demos",
+      "Clustering"
+    ]
+  },
+  {
+    "objectID": "demo-cluster.html#make-a-new-city-column",
+    "href": "demo-cluster.html#make-a-new-city-column",
+    "title": "Clustering",
+    "section": "Make a new city column",
+    "text": "Make a new city column\n\nUse the dropdown on the City column to choose Edit column &gt; Add column based on this column ….\n\n\n\nAdd column\n\n\nName the new column City_clean and click OK as the other values should be correct.\nWe created a new column that has the same values as City. We made a copy so we can always refer back to the original data.\nNext, use the dropdown on the new City_clean to choose Facet &gt; Text facet.\nWe can see that the cities are a mess.\n\n\n\nCity pre-clean\n\n\n\nWe have a mixture of cases, many misspellings and cases where the data is not a city at all.",
+    "crumbs": [
+      "Demos",
+      "Clustering"
+    ]
+  },
+  {
+    "objectID": "demo-cluster.html#change-to-uppercase",
+    "href": "demo-cluster.html#change-to-uppercase",
+    "title": "Clustering",
+    "section": "Change to uppercase",
+    "text": "Change to uppercase\n\nUse the dropdown on City_clean to choose Edit cells &gt; Common transforms &gt; To uppercase.\n.\n\nThis helps us some, combining 300 different variations to only 162 choices, but doesn’t do anything for the outright misspelling of city names.",
+    "crumbs": [
+      "Demos",
+      "Clustering"
+    ]
+  },
+  {
+    "objectID": "demo-cluster.html#cluster",
+    "href": "demo-cluster.html#cluster",
+    "title": "Clustering",
+    "section": "Cluster",
+    "text": "Cluster\nOpenRefine has a concept called Cluster that will use algorithms to find similarly-constructed or even similar sounding words. We’ll use a series of these help us clean these city names.\n\nIn the text facet box for City_clean, click on the Cluster button at the top-right. This brings up the Cluster and edit column tool.\n\n\n\nCluster tour\n\n\n\nThe idea here is to work through all the results methodically:\n\nLook through all the values for a particular Keying function.\nIf you want to merge all the values in the cluster, check the Merge box and set the New Cell Value to the desired result.\n\nIf even one of the values in the cluster does not belong together, then DON’T MERGE IT. You’ll have to deal with them independently later. Take notes and edit from the text facet, perhaps.\n\nOnce you’ve reviewed all the clusters, choose Merge Selected & Re-Cluster.\nAfter a quick double-check, change the Keying Function to the next algorithm.\nRinse and repeat for all the keying functions.\nThen change the Method from “key collision” to “nearest neighbor” and follow all the above steps again.\n\nWith nearest neighbor and levenshtein it might be worth reducing the value in Block Chars to see if there are more matches that help you.\n\n\nFollowing is a gif of me going through a couple of keying functions, merges and new algorithms. I’m not fixing all the values, just showing enough of the process to give you an idea of how it works.\n\n\n\nClustering\n\n\n\nPractice cleaning up City_clean\nAs you cluster and clean data like this, you’ll likely have to do some research and make style decisions (N PROVIDENCE vs NORTH PROVIDENCE? Is it PEACE DALE or PEACEDALE?)\n\nGo through all the algorithms and clean up the city names.\nRemember: Don’t merge unless all values in a cluster should be the same.\nOnce through all the algorithms, double-check through the facet list to see if there are values the algorithms missed. It is quite possible.\n\nYou would typically use text facets on all the text-based columns to check for other inconsistencies.",
+    "crumbs": [
+      "Demos",
+      "Clustering"
+    ]
+  },
+  {
+    "objectID": "demo-cluster.html#numeric-facets",
+    "href": "demo-cluster.html#numeric-facets",
+    "title": "Clustering",
+    "section": "Numeric facets",
+    "text": "Numeric facets\nSince the PPP data is all about money, we should make sure that our number fields are not out of whack.\n\nUse the dropdown on the LoanAmount field to choose Edit cells &gt; Common transforms &gt; To number.\nThis sets the values in that column to be numbers so we can do numbery things on them.\nUse the dropdown on LoanAmount to choose Facet &gt; Numeric facet.\nThis shows you where the menu is along with the resulting histogram:\n\n\n\nNumeric facet\n\n\n\nYou can use the sliders on the histogram to filter the data based on the value.\n\nPractice numeric facet\n\nGo through the same process as above, but for the JobsReported column.",
+    "crumbs": [
+      "Demos",
+      "Clustering"
+    ]
+  },
+  {
+    "objectID": "demo-cluster.html#timeline-facets",
+    "href": "demo-cluster.html#timeline-facets",
+    "title": "Clustering",
+    "section": "Timeline facets",
+    "text": "Timeline facets\nThe DateApproved column appears to be a date/time field but was imported as text. Given how you were able to convert and facet number fields, I bet you can poke around and figure out how to convert this a real date field and then do a timeline facet on it.",
+    "crumbs": [
+      "Demos",
+      "Clustering"
+    ]
+  },
+  {
+    "objectID": "demo-cluster.html#export",
+    "href": "demo-cluster.html#export",
+    "title": "Clustering",
+    "section": "Export",
+    "text": "Export\nOnce you’ve done all your cleaning, use the Export dropdown button at the top-right of the app to export the data in your filetype of choice.\n\nWe’re done with this lesson. Perhaps head back to the Overivew to read about some case studies.",
+    "crumbs": [
+      "Demos",
+      "Clustering"
+    ]
+  },
+  {
+    "objectID": "case-ahrq.html",
+    "href": "case-ahrq.html",
+    "title": "AHRQ diagnosis codes",
+    "section": "",
+    "text": "In this case study, I needed to pull a series of diagnostic codes from an 11-page definition booklet. There were about 275 of these alphanumeric codes split into two columns, with definitions, so using some kind of cleaning tool was preferred to avoid manual cleaning errors.",
+    "crumbs": [
+      "Case studies",
+      "AHRQ diagnosis codes"
+    ]
+  },
+  {
+    "objectID": "case-ahrq.html#the-original-pdf",
+    "href": "case-ahrq.html#the-original-pdf",
+    "title": "AHRQ diagnosis codes",
+    "section": "The original PDF",
+    "text": "The original PDF\nThe original document was a PDF document of 11 pages that looked liked this:\n\n\n\nPDF",
+    "crumbs": [
+      "Case studies",
+      "AHRQ diagnosis codes"
+    ]
+  },
+  {
+    "objectID": "case-ahrq.html#cometdocs-for-conversion",
+    "href": "case-ahrq.html#cometdocs-for-conversion",
+    "title": "AHRQ diagnosis codes",
+    "section": "Cometdocs for conversion",
+    "text": "Cometdocs for conversion\nAt the time, I used a website called Cometdocs to convert the PDF into an Excel spreadsheet, but that tool no longer exists. Today I’d probably try Tablula or Adobe Acrobat or even ChatGPT.\nThis is the how the conversion came out:\n\n\n\nExcel\n\n\nStill quite a bit of cleanup to do.",
+    "crumbs": [
+      "Case studies",
+      "AHRQ diagnosis codes"
+    ]
+  },
+  {
+    "objectID": "case-ahrq.html#openrefine-challenges",
+    "href": "case-ahrq.html#openrefine-challenges",
+    "title": "AHRQ diagnosis codes",
+    "section": "OpenRefine challenges",
+    "text": "OpenRefine challenges\nThis is how the Spreadsheet looked when imported into OpenRefine:\n\n\n\nOpenRefine Start\n\n\nI needed to accomplish several things:\n\nRemove the definition columns.\nRemove the leftover rows that still had definition text. I did this by using a regular expression to find rows in the first column that started with the letter “O” followed by a number, as these are our diagnostic codes. I then used the inverse of the filter so I could remove the “other” rows.\nUse Transpose to combine the two columns into a single one and sort it.\n\nThe gif below runs through all the steps. Note that in reality, I was more methodical, testing each filter and step to make sure I was not removing data I needed to keep or vice versa.\n\n\n\nAll steps\n\n\nThis is the finished data and record of the steps:\n\n\n\nDone",
+    "crumbs": [
+      "Case studies",
+      "AHRQ diagnosis codes"
+    ]
+  },
+  {
+    "objectID": "case-ash.html",
+    "href": "case-ash.html",
+    "title": "ASH cemetery",
+    "section": "",
+    "text": "An Austin news organization had a list of burials at the Austin State Hospital cemetery and wanted to summarize how many people were buried each year. When the data came to me it was in a spreadsheet but it might have been converted from a PDF or some other format.",
+    "crumbs": [
+      "Case studies",
+      "ASH cemetery"
+    ]
+  },
+  {
+    "objectID": "case-ash.html#the-original-data",
+    "href": "case-ash.html#the-original-data",
+    "title": "ASH cemetery",
+    "section": "The original data",
+    "text": "The original data\n\n\n\nASH Excel\n\n\nNote on “Plot 4” of the data that the Date Admitted breaks into two lines, creating a new spreadsheet row. We needed to get the “year” value for each date in Date Admitted and Date Buried so we could count the records by year.\n(I just needed to extract the year, so I didn’t go through the effort to fix the varying date formats.)",
+    "crumbs": [
+      "Case studies",
+      "ASH cemetery"
+    ]
+  },
+  {
+    "objectID": "case-ash.html#records-vs-rows",
+    "href": "case-ash.html#records-vs-rows",
+    "title": "ASH cemetery",
+    "section": "Records vs rows",
+    "text": "Records vs rows\nOpenRefine has an option that allows us to show related rows as single records, opening up some additional programming options for us. Once imported, I choose to show as records:\n\n\n\nASH records\n\n\nI was able to use GREL functions to copy the second “row” for the record into a new column so I could get the entire date on a single row to manage later.\nI used Edit column &gt; Add column based on this column with the following expression: row.record.cells[\"Date Admitted\"].value[-1].\n\n\n\nexplain records",
+    "crumbs": [
+      "Case studies",
+      "ASH cemetery"
+    ]
+  },
+  {
+    "objectID": "case-ash.html#just-needed-the-year-in-the-end",
+    "href": "case-ash.html#just-needed-the-year-in-the-end",
+    "title": "ASH cemetery",
+    "section": "Just needed the year in the end",
+    "text": "Just needed the year in the end\nI was able to create parts of dates and put them back together again to get a common-enough date format to extract the last four characters – the year – from the fixed date.\n\n\n\nASH end\n\n\nIf the full date was important, more work could’ve been done to normalize those.",
+    "crumbs": [
+      "Case studies",
+      "ASH cemetery"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html",
+    "href": "demo-facets.html",
+    "title": "Transforms & Facets",
+    "section": "",
+    "text": "This lesson outlines the basics of text facets, filters and data cleaning in OpenRefine. It assumes you have already installed OpenRefine.",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html#the-story-behind-the-lesson",
+    "href": "demo-facets.html#the-story-behind-the-lesson",
+    "title": "Transforms & Facets",
+    "section": "The story behind the lesson",
+    "text": "The story behind the lesson\nFor this story we wanted to summarize candidate election campaign contributions by race, party and election cycle. Before doing so, we had to clean up the campaign fund names and normalize some other columns in the data.",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html#start-with-some-data",
+    "href": "demo-facets.html#start-with-some-data",
+    "title": "Transforms & Facets",
+    "section": "Start with some data",
+    "text": "Start with some data\n\nDownload this TEC campaign finance data data. Put the file somewhere you can find it later.\nThis is what the file looks like in Excel:\n\n\n\nData peek\n\n\n\nThere are several things we’d like to do with this data:\n\nCreate a new “Candidate” column based on the PAC-based “Name” column, but clean up the values to just the candidate’s name.\nCreate a new “Election Cycle” column so we can later summarize the amounts over these two-year cycles.\nNormalize the “Race-Ethnicity” and “Party” columns.",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html#start-an-openrefine-project",
+    "href": "demo-facets.html#start-an-openrefine-project",
+    "title": "Transforms & Facets",
+    "section": "Start an OpenRefine project",
+    "text": "Start an OpenRefine project\n\nLaunch the OpenRefine program (as you normally would for your operating system.)\nWhen you launch OpenRefine it loads in your default browser at http://127.0.0.1:3333/. That is normal. Both the program and the browser need to run, but you work within the browser.\nWhen you launch OpenRefine you’ll see a number of menu items to the left.\nChoose the Create Project item.\nMake sure you are on the This Computer option.\nClick the Choose Files button and go select the TEC Excel file you downloaded.\n\n\n\nChoose files\n\n\nOnce you’ve found your file, click on the Next button.\n\n\n\nParse data\n\n\nThere are several options you can adjust here. This workbook only has one sheet, but if your source file had more than one you could choose it here. You can also choose to ignore rows at the top fof the file and such.\nClick on the Create Project button to get started.\n\n\nGetting around\nOnce in our project, there are a couple of controls along the top you should play with:\n\nChange the number of rows you can see\nPage through the data using next, last, previous, first.\n\n\n\nPage data",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html#create-a-new-column",
+    "href": "demo-facets.html#create-a-new-column",
+    "title": "Transforms & Facets",
+    "section": "Create a new column",
+    "text": "Create a new column\nYou usually want to keep your original data so you can refer back to it, so we’ll make a new column before we change our data significantly.\n\nOn the Name column, use the dropdown to Edit Column &gt; Add a column based on this column. Like this:\n\n\n\nAdd column\n\n\nYou’ll next get a window where we can define what we want in this new column.\n\n\n\nNew column setup\n\n\nTake note of the “Expression” window here. You can do a LOT more with this than we are here, but inside we have the expression value, which means we want to use the “value” of our original column as the content for each row of our new columns. It is possible to make changes to the value (the content) as you create the new column using GREL, a programming language specific to Refine.\nIn our case here, just click OK to create the new column.",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html#common-transforms",
+    "href": "demo-facets.html#common-transforms",
+    "title": "Transforms & Facets",
+    "section": "Common transforms",
+    "text": "Common transforms\nSometimes cells in data have spaces at the beginning or end of the values that you can’t see, and this can cause problems later. We can fix that quickly with Trim.\n\nTrim\n\nClick on the dropdown for the Candidate column and go to Edit cells &gt; Common transforms &gt; Trim leading and trailing whitespace.\n\n\n\nTrim\n\n\n\nWhen you do you’ll get a message about how many fields changed.\n\n\n\nTrim result\n\n\n\n\nChange to uppercase\nYou may have notice the other things you can do here, like changing everything to UPPERCASE, or removing extra spaces and such.\nLet’s use this to change all the “d” and “r” in the Party field to uppercase.\n\nUse the dropdown on the “Party” column to choose Edit cells &gt; Common transforms &gt; To uppercase.\n\n\n\nTo uppercase\n\n\n\nNow you have “D” and “R” for Party.",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html#undo",
+    "href": "demo-facets.html#undo",
+    "title": "Transforms & Facets",
+    "section": "Undo",
+    "text": "Undo\nNote at the top left of OpenRefine there is an Undo / Redo panel.\n\n\n\nUndo\n\n\nOpenRefine keeps track of every move you do, and you can go back in time. This should give you great freedom to try things because you can always back out of it.\nYou can also Extract the steps and Apply them later if you want to save steps to perform again. (This can be a way to have a record of how you cleaned your data so others or your future self can repeat your work.) The format is a JSON file.",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html#text-facets",
+    "href": "demo-facets.html#text-facets",
+    "title": "Transforms & Facets",
+    "section": "Text facets",
+    "text": "Text facets\nOne of the most useful skills in OpenRefine is find and change many cells of data in a column at once. The Text facet function gives you a list of all the unique values in your data and tells you in how many rows it shows up.\n\nGo to the dropdown for Candidate and then to Facet &gt; Text facet.\n\n\n\nText facet\n\n\nThat will make a list of the values on the left of your screen.\n\n\n\nText facet candidates\n\n\n\nOpenRefine found that there are 319 unique values for Candidate in your data, along with a number in grey after it to tell you how many rows have that value.\n\nSort\nThe values are listed alphabetically, which can be helpful to find records that are not quite alike but should be.\n\nClick on Sort by count link in the facet header to show the facets that have the most values.\nClick Sort by name to return to the alphabetical list.\n\n\n\nEdit value from a text facet\nNotice that when you roll your cursor over a value in the facet list you get a link where you can edit that value.\n\nFind “Citizens For Joe Crabb (DISSOLVED)” and choose edit.\nChange the text to say just “Joe Crabb” and hit Apply.\n\nOnce you change that value, the list sorts again and Joe is down by the J’s.\n\n\nPractice editing from a text facet\nA little work on your own to get some practice:\n\nClose the Candidate text facet by clicking the X that is to the left of the facet title.\nClean up the Race-Ethnicity values to spell out those values to Asian, Black, Hispanic, White. This is straightforward facet editing: Create the facet, then edit the values.\n\nOnce you are done:\n\nClose your Race-Ethnicity facet.\nAdd back a text facet for Candidate.",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html#text-filter",
+    "href": "demo-facets.html#text-filter",
+    "title": "Transforms & Facets",
+    "section": "Text filter",
+    "text": "Text filter\nYou’ll notice there are a bunch of Candidate records that start with “Committee to …”. We’ll use a Text filter to help find those.\n\nFrom the dropdown on Candidate, choose Text filter.\n\n\n\nText filter\n\n\nThis puts a box in the left pane under the Candidate facets.\n\n\n\nText filter\n\n\nType in “committee” and you’ll filter the facet list (and the Matching rows pane at right) so you can more easily find the ones to change.\nGo ahead and edit all those records to just the candidate’s name.\n\nThere is a “case sensitive” option if that is helpful for your filters. If you are familiar with “regular expressions” you can check that box and built your match based on patterns instead of text strings.\nYou can practice using the process to fix some other common terms:\n\n“Texa” to catch both Texas and Texans\n“Campaign”\n\nBut when it comes to “Friends”, let’s do this in a better way by changing them all at once.",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html#search-and-replace-with-transform",
+    "href": "demo-facets.html#search-and-replace-with-transform",
+    "title": "Transforms & Facets",
+    "section": "Search and replace with Transform",
+    "text": "Search and replace with Transform\nNow we’ll use the Transform function to search for and replace values.\n\nSet your Text filter to “Friends of” so we can see them, but don’t fix them. We’ll instead edit all the rows at once using Transform. Click on the Candidate dropdown and go to Edit cells &gt; Transform:\n\n\n\nTransform menu\n\n\nThis will bring up a window much like the one we used when we created a new column.\n\n\n\nTransform replace\n\n\nNote that in the screenshot above, I’ve typed a function into the expression field. This will make our search and replace happen. You need to do the same.\nIn the Expression field, type (or copy/paste) this in: replace(value,\"Friends of \",\"\")\nLet’s break this down:\n\nreplace is a function in the GREL language. It takes three arguments inside the parentheses, separated by commas:\nThe first argument is the string we are changing. In our case, we are using the variable value, which refers to the value of the current cell.\nThe second argument is the string we are searching for. In our case we are searching for \"Friends of \". Note we are including the space after “of” since we don’t want to leave it.\nThe last argument is what we are replacing that text with, which in our case is nothing, but we have to explicitly say that as a string, hence the \"\".\n\nYou can see in the preview that we are removing that text from multiple rows.\nClick OK when you are ready to execute.",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html#adding-values-based-on-other-columns",
+    "href": "demo-facets.html#adding-values-based-on-other-columns",
+    "title": "Transforms & Facets",
+    "section": "Adding values based on other columns",
+    "text": "Adding values based on other columns\nNow that you’ve learned text facets and text filters, we’ll use those skills to create a column called Election Cycle that has values of 2009-2010, 2011-2012 and 2013-2014 based on the Year.\n\nCreate a blank column\n\nUse the Year column dropdown to choose Edit Column &gt; Add column based on this column.\nName the column “Election cycle”.\nIn the expression field, just add two quotes with nothing between them: \"\".\nClick OK.\n\nThis will create a new column, but there will be nothing in it because we filled it with an “empty” string.",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html#filter-with-regular-expressions",
+    "href": "demo-facets.html#filter-with-regular-expressions",
+    "title": "Transforms & Facets",
+    "section": "Filter with regular expressions",
+    "text": "Filter with regular expressions\nThis isn’t a lesson on regular expressions but I do have one here if you are interested. However, we’ll use a simple one here just to show the power of them.\nOur aim here is to add the text “2009-2010” in the Election cycle anytime a row has a year of either 2009 or 2010.\n\nSet up the filter\n\nCreate a text facet on the Year column.\nCreate a text filter on the Year column.\nIn the text filter, add the text 2009|2010.\nIn the text filter, check the box next to regular expression.\n\n\nThat | character between the two years is called a “pipe”. You can find it as the Shift of \\ on your keyboard, right above the Return key.\n\nThis regular expression is used to search patterns of characters instead of actual text. The | key means “or”. So we are filtering for “2009 or 2010”.\n\n\n\nRegex filter\n\n\n\n\nFill text with Transform\nNow that we only have 2009 and 2010 rows selected, we can fill our Election cycle column with the text we want.\n\nUse the dropdown on Election cycle to choose Edit cells &gt; Transform.\nEnter the following into expression field: \"2009-2010\"\nClick OK.\n\n\n\nEnter text\n\n\n\n\nDon’t forget the quotes. That is what tells Refine to insert this as text.\n\nYou’ll see that we now have our Election cycle filled in.\n\n\nPractice filter and fill\nOn your own, repeat this process for the year collections of “2011-2012” an “2013-2014”. You’ll want to adjust the filter to capture the years you want, then use Edit cells &gt; Tranform to fill in the proper cycle.",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  },
+  {
+    "objectID": "demo-facets.html#exporting-your-cleaned-data",
+    "href": "demo-facets.html#exporting-your-cleaned-data",
+    "title": "Transforms & Facets",
+    "section": "Exporting your cleaned data",
+    "text": "Exporting your cleaned data\nOnce you cleaned everything the way you want it, you’ll want to export your changed data to get it out of OpenRefine so you can use it elsewhere.\n\nGo under the Export button at top-right and choose the export type of your choice.\n\n\n\nExport\n\n\n\nThis will download your file to your Downloads folder. Don’t forget to move the file to a safe place where you can find it again.\nThat’s the end of this example. We’ll handle Clustering with a different data set.",
+    "crumbs": [
+      "Demos",
+      "Transforms & Facets"
+    ]
+  }
+]

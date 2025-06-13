@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+  - "*.qmd"
+
+website:
+  title: "Intro to OpenRefine"
+  sidebar:
+    contents:
+      - href: index.qmd
+        text: Overview
+      - section: "Demos"
+        contents: 
+          - demo-facets.qmd
+          - demo-cluster.qmd
+      - section: "Case studies"
+        contents: "case-*qmd"
+      # - auto: "*.qmd"
+
+format:
+  html:
+    theme: yeti
+    css: styles.css
+    toc: true
+    df-print: paged
+    code-overflow: wrap
