@@ -14,7 +14,7 @@ With this tutorial we will use the clustering technique in OpenRefine to clean u
 We're going to use Rhode Island's list of PPP loans up to $150,000. We're using Rhode Island because the data set is relatively small a 15,472 rows (compared to Texas at 365,168 rows.) OpenRefine could handle the larger data, but performance really starts to suffer with larger files.
 
 ::: {.callout-note appearance="minimal"}
-<i class="bi bi-download"></i> [Download RI PPP data](ppp-less150-ri.csv){download="data/ppp-less150-ri.csv"}
+<i class="bi bi-download"></i> [Download RI PPP data](data/ppp-less150-ri.csv){download="ppp-less150-ri.csv"}
 :::
 
 
