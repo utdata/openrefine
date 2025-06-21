@@ -97,7 +97,7 @@
     "href": "demo-cluster.html#create-a-new-project",
     "title": "Clustering",
     "section": "Create a new project",
-    "text": "Create a new project\n\nLaunch OpenRefine if not already open. If you do have it open, click on the OpenRefine log at the top-left to get to the “home” page.\nChoose Create project.\nChoose This Computer if not already chosen.\nUse Choose files and find your downloaded data, ppp-less150-ri.csv.\nClick Next.\nThe defaults on the Parse screen should be fine. Click Create project.\n\nYou should end up here:\n\n\n\nRaw data\n\n\nYou can already see that some cities are in UPPERCASE and some are not. Lordy … if that were our only problem.",
+    "text": "Create a new project\n\nLaunch OpenRefine if not already open. If you do have it open, click on the OpenRefine logo at the top-left to get to the “home” page.\nChoose Create project.\nChoose This Computer if not already chosen.\nUse Choose files and find your downloaded data, ppp-less150-ri.csv.\nClick Next.\nThe defaults on the Parse screen should be fine. Click Create project.\n\nYou should end up here:\n\n\n\nRaw data\n\n\nYou can already see that some cities are in UPPERCASE and some are not. Lordy … if that were our only problem.",
     "crumbs": [
       "Demos",
       "Clustering"

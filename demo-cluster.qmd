@@ -22,7 +22,7 @@ We're going to use Rhode Island's list of PPP loans up to $150,000. We're using 
 
 ## Create a new project
 
-1. Launch OpenRefine if not already open. If you do have it open, click on the OpenRefine log at the top-left to get to the "home" page.
+1. Launch OpenRefine if not already open. If you do have it open, click on the OpenRefine logo at the top-left to get to the "home" page.
 1. Choose **Create project**.
 1. Choose **This Computer** if not already chosen.
 1. Use **Choose files** and find your downloaded data, `ppp-less150-ri.csv`.
