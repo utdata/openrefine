@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://utdata.github.io/openrefine/index.html</loc>
+    <lastmod>2025-06-21T12:02:36.888Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utdata.github.io/openrefine/demo-cluster.html</loc>
+    <lastmod>2025-06-21T12:02:36.972Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utdata.github.io/openrefine/case-ahrq.html</loc>
+    <lastmod>2025-06-13T22:03:57.110Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utdata.github.io/openrefine/case-ash.html</loc>
+    <lastmod>2025-06-21T12:02:36.838Z</lastmod>
+  </url>
+  <url>
+    <loc>https://utdata.github.io/openrefine/demo-facets.html</loc>
+    <lastmod>2025-06-13T22:03:57.119Z</lastmod>
+  </url>
+</urlset>

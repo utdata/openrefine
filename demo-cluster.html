@@ -8,7 +8,7 @@
 
 <meta name="author" content="Christian McDonald">
 
-<title>Overview – Intro to OpenRefine</title>
+<title>Clustering – Intro to OpenRefine</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Overview</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./demo-facets.html">Demos</a></li><li class="breadcrumb-item"><a href="./demo-cluster.html">Clustering</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -108,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
@@ -129,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./demo-cluster.html" class="sidebar-item-text sidebar-link">
+  <a href="./demo-cluster.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Clustering</span></a>
   </div>
 </li>
@@ -168,20 +168,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#installation" id="toc-installation" class="nav-link active" data-scroll-target="#installation">Installation</a></li>
-  <li><a href="#walkthroughs" id="toc-walkthroughs" class="nav-link" data-scroll-target="#walkthroughs">Walkthroughs</a></li>
-  <li><a href="#case-studies" id="toc-case-studies" class="nav-link" data-scroll-target="#case-studies">Case studies</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link" data-scroll-target="#about-me">About me</a></li>
+  <li><a href="#our-story-and-goal" id="toc-our-story-and-goal" class="nav-link active" data-scroll-target="#our-story-and-goal">Our story and goal</a></li>
+  <li><a href="#download-the-data" id="toc-download-the-data" class="nav-link" data-scroll-target="#download-the-data">Download the data</a></li>
+  <li><a href="#create-a-new-project" id="toc-create-a-new-project" class="nav-link" data-scroll-target="#create-a-new-project">Create a new project</a></li>
+  <li><a href="#make-a-new-city-column" id="toc-make-a-new-city-column" class="nav-link" data-scroll-target="#make-a-new-city-column">Make a new city column</a></li>
+  <li><a href="#change-to-uppercase" id="toc-change-to-uppercase" class="nav-link" data-scroll-target="#change-to-uppercase">Change to uppercase</a></li>
+  <li><a href="#cluster" id="toc-cluster" class="nav-link" data-scroll-target="#cluster">Cluster</a>
+  <ul class="collapse">
+  <li><a href="#practice-cleaning-up-city_clean" id="toc-practice-cleaning-up-city_clean" class="nav-link" data-scroll-target="#practice-cleaning-up-city_clean">Practice cleaning up City_clean</a></li>
+  </ul></li>
+  <li><a href="#numeric-facets" id="toc-numeric-facets" class="nav-link" data-scroll-target="#numeric-facets">Numeric facets</a>
+  <ul class="collapse">
+  <li><a href="#practice-numeric-facet" id="toc-practice-numeric-facet" class="nav-link" data-scroll-target="#practice-numeric-facet">Practice numeric facet</a></li>
+  </ul></li>
+  <li><a href="#timeline-facets" id="toc-timeline-facets" class="nav-link" data-scroll-target="#timeline-facets">Timeline facets</a></li>
+  <li><a href="#export" id="toc-export" class="nav-link" data-scroll-target="#export">Export</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/utdata/openrefine/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/utdata/openrefine/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/utdata/openrefine/blob/main/demo-cluster.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/utdata/openrefine/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./demo-facets.html">Demos</a></li><li class="breadcrumb-item"><a href="./demo-cluster.html">Clustering</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Overview</h1>
+<h1 class="title">Clustering</h1>
 </div>
 
 
@@ -204,55 +214,155 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://openrefine.org/">OpenRefine</a> is a powerful open source tool for working with messy data. Our most common use for it is to clean and transform data.</p>
-<section id="installation" class="level2">
-<h2 class="anchored" data-anchor-id="installation">Installation</h2>
-<p>The OpenRefine website has the <a href="https://openrefine.org/download.html">latest stable release</a>. They also have <a href="https://openrefine.org/docs/manual/installing#installing-or-upgrading">extensive installation instructions</a>, including some important tips Mac users on how to <a href="https://openrefine.org/docs/manual/installing#install-or-upgrade-openrefine">circumvent security warnings</a> when launching the file.</p>
-<p>While there is an OpenRefine application you launch, the program itself launches and uses your web browser for the interface.</p>
+<p>This lesson assumes you’ve gone through the <a href="./demo-facets.html">Facets demo</a> or have at least some familiarity with OpenRefine.</p>
+<section id="our-story-and-goal" class="level2">
+<h2 class="anchored" data-anchor-id="our-story-and-goal">Our story and goal</h2>
+<p>With this tutorial we will use the clustering technique in OpenRefine to clean up city names in some Paycheck Protection Program data. The data is notoriously dirty. We can’t accurately count or sum the loan values by city until this data has been cleaned.</p>
 </section>
-<section id="walkthroughs" class="level2">
-<h2 class="anchored" data-anchor-id="walkthroughs">Walkthroughs</h2>
-<p>These are detailed demos with illustrated step-by-step instructions of commonly-used features of OpenRefine. If you are here to learn how to use OpenRefine, start with these.</p>
-<ul>
-<li><a href="./demo-facets.html">Transforms &amp; Facets</a></li>
-<li><a href="./demo-cluster.html">Clustering</a></li>
-</ul>
-<p>When going through these demos, know that numbered lists are steps for you to do:</p>
+<section id="download-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="download-the-data">Download the data</h2>
+<p>We’re going to use Rhode Island’s list of PPP loans up to $150,000. We’re using Rhode Island because the data set is relatively small a 15,472 rows (compared to Texas at 365,168 rows.) OpenRefine could handle the larger data, but performance really starts to suffer with larger files.</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><i class="bi bi-download"></i> <a href="data/ppp-less150-ri.csv" download="ppp-less150-ri.csv">Download RI PPP data</a></p>
+</div>
+</div>
+</div>
 <ol type="1">
-<li>Do this thing</li>
-<li>And then this thing</li>
+<li>Use the link above to download the csv file and put it someplace where you can find it.</li>
 </ol>
-<p>Regular bullet lists are just information:</p>
-<ul>
-<li>This is just information</li>
-<li>It might be important. Or not.</li>
-</ul>
 </section>
-<section id="case-studies" class="level2">
-<h2 class="anchored" data-anchor-id="case-studies">Case studies</h2>
-<p>These are examples where I’ve used OpenRefine to solve a problem. They are not tutorials, but discussions of how OpenRefine was used in some specific instances with key points explained.</p>
-<ul>
-<li><a href="./case-ahrq.html">AHRQ diagnostic codes</a> pulled from a PDF.</li>
-<li><a href="./case-ash.html">Austin State Hospital cemetery</a> burials where records are on more than one line.</li>
-</ul>
+<section id="create-a-new-project" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-new-project">Create a new project</h2>
+<ol type="1">
+<li>Launch OpenRefine if not already open. If you do have it open, click on the OpenRefine logo at the top-left to get to the “home” page.</li>
+<li>Choose <strong>Create project</strong>.</li>
+<li>Choose <strong>This Computer</strong> if not already chosen.</li>
+<li>Use <strong>Choose files</strong> and find your downloaded data, <code>ppp-less150-ri.csv</code>.</li>
+<li>Click <strong>Next</strong>.</li>
+<li>The defaults on the Parse screen should be fine. Click <strong>Create project</strong>.</li>
+</ol>
+<p>You should end up here:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ppp-raw-data.png" class="img-fluid figure-img"></p>
+<figcaption>Raw data</figcaption>
+</figure>
+</div>
+<p>You can already see that some cities are in UPPERCASE and some are not. Lordy … if that were our only problem.</p>
 </section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<section id="make-a-new-city-column" class="level2">
+<h2 class="anchored" data-anchor-id="make-a-new-city-column">Make a new city column</h2>
+<ol type="1">
+<li><p>Use the dropdown on the <em>City</em> column to choose Edit column &gt; <strong>Add column based on this column</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ppp-add-column.png" class="img-fluid figure-img"></p>
+<figcaption>Add column</figcaption>
+</figure>
+</div></li>
+<li><p>Name the new column <strong>City_clean</strong> and click <strong>OK</strong> as the other values should be correct.</p>
+<p>We created a new column that has the same values as <em>City</em>. We made a copy so we can always refer back to the original data.</p></li>
+<li><p>Next, use the dropdown on the new <em>City_clean</em> to choose Facet &gt; <strong>Text facet</strong>.</p>
+<p>We can see that the cities are a mess.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ppp-city-preclean.png" class="img-fluid figure-img"></p>
+<figcaption>City pre-clean</figcaption>
+</figure>
+</div></li>
+</ol>
+<p>We have a mixture of cases, many misspellings and cases where the data is not a city at all.</p>
+</section>
+<section id="change-to-uppercase" class="level2">
+<h2 class="anchored" data-anchor-id="change-to-uppercase">Change to uppercase</h2>
+<ol type="1">
+<li><p>Use the dropdown on <em>City_clean</em> to choose Edit cells &gt; Common transforms &gt; <strong>To uppercase</strong>.</p>
+<p><img src="img/ppp-to-uppercase.png" class="img-fluid" alt="To uppercase">.</p></li>
+</ol>
+<p>This helps us some, combining 300 different variations to only 162 choices, but doesn’t do anything for the outright misspelling of city names.</p>
+</section>
+<section id="cluster" class="level2">
+<h2 class="anchored" data-anchor-id="cluster">Cluster</h2>
+<p>OpenRefine has a concept called <strong>Cluster</strong> that will use algorithms to find similarly-constructed or even similar sounding words. We’ll use a series of these help us clean these city names.</p>
+<ol type="1">
+<li><p>In the text facet box for <em>City_clean</em>, click on the <strong>Cluster</strong> button at the top-right. This brings up the <strong>Cluster and edit column</strong> tool.</p></li>
+<li><p>Click on the <strong>Cluster</strong> button in the middle so we can take a little tour of the options.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ppp-cluster-tour.png" class="img-fluid figure-img"></p>
+<figcaption>Cluster tour</figcaption>
+</figure>
+</div></li>
+</ol>
+<p>The idea here is to work through all the results methodically:</p>
 <ul>
-<li><a href="https://openrefine.org/">OpenRefine.org</a> has great documentation, tutorials, FAQs and more, including:
+<li>Look through all the values for a particular <strong>Keying function</strong>.</li>
+<li>If you want to merge <strong>all</strong> the values in the cluster, check the <strong>Merge</strong> box and set the <strong>New Cell Value</strong> to the desired result.
 <ul>
-<li>OpenRefine’s <a href="https://openrefine.org/docs">user manual</a></li>
-<li><a href="https://openrefine.org/docs/manual/expressions">Expressions</a></li>
-<li><a href="https://openrefine.org/docs/manual/grelfunctions">GREL functions</a></li>
+<li>If one of the values in the cluster does belong to the new value, then uncheck the box next to that value so it won’t be included.</li>
+</ul></li>
+<li>Once you’ve reviewed all the clusters, choose <strong>Merge Selected &amp; Re-Cluster</strong>.</li>
+<li>After a quick double-check, change the <strong>Keying Function</strong> to the next algorithm.</li>
+<li>Rinse and repeat for all the keying functions.</li>
+<li>Then change the <strong>Method</strong> from “key collision” to “nearest neighbor” and follow all the above steps again.
+<ul>
+<li>With <strong>nearest neighbor</strong> and <strong>levenshtein</strong> it might be worth reducing the value in <strong>Block Chars</strong> to see if there are more matches that help you.</li>
 </ul></li>
 </ul>
+<p>Below is a gif of me going through a couple of keying functions, merges and new algorithms. I’m not fixing all the values, just showing enough of the process to give you an idea of how it works.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ppp-cluster.gif" class="img-fluid figure-img"></p>
+<figcaption>Clustering</figcaption>
+</figure>
+</div>
+<section id="practice-cleaning-up-city_clean" class="level3">
+<h3 class="anchored" data-anchor-id="practice-cleaning-up-city_clean">Practice cleaning up City_clean</h3>
+<p>As you cluster and clean data like this, you’ll likely have to do some research and make style decisions (N PROVIDENCE vs NORTH PROVIDENCE? Is it PEACE DALE or PEACEDALE?)</p>
+<ol type="1">
+<li>Go through all the algorithms and clean up the city names.</li>
+<li>Once through all the algorithms, double-check through the facet list to see if there are values the algorithms missed. It is quite possible.</li>
+</ol>
+<p>You would typically use text facets on all the text-based columns to check for other inconsistencies.</p>
 </section>
-<section id="about-me" class="level2">
-<h2 class="anchored" data-anchor-id="about-me">About me</h2>
-<p>By <a href="https://www.linkedin.com/in/critmcdonald/">Christian McDonald</a><br>
-Associate Professor of Practice<br>
-<a href="https://journalism.utexas.edu/">School of Journalism and Media</a>, Moody College of Communication<br>
-University of Texas at Austin</p>
+</section>
+<section id="numeric-facets" class="level2">
+<h2 class="anchored" data-anchor-id="numeric-facets">Numeric facets</h2>
+<p>Since the PPP data is all about money, we should make sure that our number fields are not out of whack.</p>
+<ol type="1">
+<li><p>Use the dropdown on the <em>LoanAmount</em> field to choose Edit cells &gt; Common transforms &gt; <strong>To number</strong>.</p>
+<p>This sets the values in that column to be numbers so we can do numbery things on them.</p></li>
+<li><p>Use the dropdown on <em>LoanAmount</em> to choose Facet &gt; <strong>Numeric facet</strong>.</p>
+<p>This shows you where the menu is along with the resulting histogram:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ppp-numeric-facet.png" class="img-fluid figure-img"></p>
+<figcaption>Numeric facet</figcaption>
+</figure>
+</div></li>
+</ol>
+<p>You can use the sliders on the histogram to filter the data based on the value.</p>
+<section id="practice-numeric-facet" class="level3">
+<h3 class="anchored" data-anchor-id="practice-numeric-facet">Practice numeric facet</h3>
+<ol type="1">
+<li>Go through the same process as above, but for the <em>JobsReported</em> column.</li>
+</ol>
+</section>
+</section>
+<section id="timeline-facets" class="level2">
+<h2 class="anchored" data-anchor-id="timeline-facets">Timeline facets</h2>
+<p>The <em>DateApproved</em> column appears to be a date/time field but was imported as text. Given how you were able to convert and facet number fields, I bet you can poke around and figure out how to convert this a real date field and then do a timeline facet on it.</p>
+</section>
+<section id="export" class="level2">
+<h2 class="anchored" data-anchor-id="export">Export</h2>
+<p>Once you’ve done all your cleaning, use the Export dropdown button at the top-right of the app to export the data in your filetype of choice.</p>
+<hr>
+<p>We’re done with this lesson. Perhaps head back to the <a href="./index.html#case-studies">Overivew</a> to read about some case studies.</p>
 
 
 </section>
@@ -348,7 +458,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/utdata\.github\.io\/openrefine\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -680,4 +790,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/utdata/openrefine/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/utdata/openrefine/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/utdata/openrefine/blob/main/demo-cluster.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/utdata/openrefine/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
