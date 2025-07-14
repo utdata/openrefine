@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,windows,r,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,r,visualstudiocode
 
+## Custom adds
+/_site/
+/.quarto/
+
 ### macOS ###
 # General
 .DS_Store
@@ -136,4 +140,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,r,visualstudiocode
-/.quarto/
+
