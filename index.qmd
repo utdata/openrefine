@@ -5,6 +5,12 @@ author: "Christian McDonald"
 
 [OpenRefine](https://openrefine.org/) is a powerful open source tool for working with messy data. Our most common use for it is to clean and transform data.
 
+::: callout-important
+
+You can find this lesson at [bit.ly/ire-nicar-openrefine](https://bit.ly/ire-nicar-openrefine).
+
+:::
+
 ## Installation
 
 The OpenRefine website has the [latest stable release](https://openrefine.org/download.html). They also have [extensive installation instructions](https://openrefine.org/docs/manual/installing#installing-or-upgrading), including some important tips Mac users on how to [circumvent security warnings](https://openrefine.org/docs/manual/installing#install-or-upgrade-openrefine) when launching the file.
