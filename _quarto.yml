@@ -18,6 +18,9 @@ website:
       # - auto: "*.qmd"
   repo-url: https://github.com/utdata/openrefine
   repo-actions: [source, issue]
+  page-footer:
+    center: "Find this at: **bit.ly/ire-nicar-openrefine**"
+    border: true
 
 format:
   html:
